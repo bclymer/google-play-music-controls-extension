@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Google Play Music Global Control",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://play.google.com/music*"],
+      "js": ["socket.io.js", "controls.js"]
+    }
+  ],
+  "description": "Allows you to control Google Play Music the keyboard outside of Chrome.",
+  "icons": {"16":  "assets/music_control_16.png",
+            "48":  "assets/music_control_48.png",
+            "128": "assets/music_control_128.png"},
+  "permissions": [
+    "webRequest"
+  ]
+}
